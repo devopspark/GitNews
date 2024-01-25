@@ -41,7 +41,7 @@ jobs:
     - name: commits
       run: |
         git config --global user.email "merry-jopd@daum.net"
-        git config --global user.name "devopspark"
+        git config --global user.name "devops100"
         git add 속보data.csv
         git commit -m "뉴스데이터 수집"
 
