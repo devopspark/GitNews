@@ -47,9 +47,7 @@ jobs:
 
     # 푸쉬
     - name: push
-      run: |
-        git config --global user.email "merry-jopd@daum.net"
-        git config --global user.name "devops100"     
-        git push origin main
-      env:
-        ACCESS_TOKEN: \$
+      uses: ad-m/github-push-action@master    
+      with:
+        branch: master
+        github_token: $
