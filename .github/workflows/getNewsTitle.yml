@@ -5,6 +5,11 @@ name: 뉴스속보수집
 
 # 어떤 조건일때 파일을 실행시킬지 
 on:
+  # 특정 시간이 될때마다 실행
+  # cron 표현식
+  schdule:
+    - cron: 10 * * * *
+    
   push:
     branches: [ "main" ]
   pull_request:
