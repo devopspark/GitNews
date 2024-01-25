@@ -7,8 +7,8 @@ name: 뉴스속보수집
 on:
   # 특정 시간이 될때마다 실행
   # cron 표현식
-  schdule:
-    - cron: 10 * * * *
+  schedule:
+    - cron: 0,30 * * * *
     
   push:
     branches: [ "main" ]
